@@ -1,9 +1,8 @@
 package com.pinyougou.pojo;
 
-import lombok.Data;
-
-import javax.persistence.*;
 import java.io.Serializable;
+import javax.persistence.*;
+import lombok.Data;
 
 @Table(name = "tb_item_cat")
 @Data
@@ -33,6 +32,9 @@ public class ItemCat implements Serializable {
      */
     @Column(name = "type_id")
     private Long typeId;
+
+    @Column(name = "status")
+    private String status;
 
     private static final long serialVersionUID = 1L;
 }

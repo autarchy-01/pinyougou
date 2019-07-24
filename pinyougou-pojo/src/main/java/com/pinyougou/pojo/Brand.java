@@ -1,9 +1,8 @@
 package com.pinyougou.pojo;
 
-import lombok.Data;
-
-import javax.persistence.*;
 import java.io.Serializable;
+import javax.persistence.*;
+import lombok.Data;
 
 @Table(name = "tb_brand")
 @Data
@@ -24,6 +23,9 @@ public class Brand implements Serializable {
      */
     @Column(name = "first_char")
     private String firstChar;
+
+    @Column(name = "status")
+    private String status;
 
     private static final long serialVersionUID = 1L;
 }

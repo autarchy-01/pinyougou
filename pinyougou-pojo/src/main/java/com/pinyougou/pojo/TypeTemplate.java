@@ -1,9 +1,9 @@
 package com.pinyougou.pojo;
 
-import lombok.Data;
-
-import javax.persistence.*;
 import java.io.Serializable;
+import javax.persistence.*;
+
+import lombok.Data;
 
 @Table(name = "tb_type_template")
 @Data
@@ -36,6 +36,9 @@ public class TypeTemplate implements Serializable {
      */
     @Column(name = "custom_attribute_items")
     private String customAttributeItems;
+
+    @Column(name = "status")
+    private String status;
 
     private static final long serialVersionUID = 1L;
 }
